@@ -1,0 +1,23 @@
+<!--hello from the cloud code application - please read the following pages for more information: <a href="https://www.ng.bluemix.net/docs/#starters/mobile/mobilecloud/nodejsmobile.html#nodejsmobile">Extending Node.js to use Mobile Cloud applications</a> -->
+
+<!--<script language="javascript" type="text/javascript"></script> -->
+<body>
+<script type="text/javascript">
+	var  i = 0;
+	var neg;
+	var images = null;
+
+	neg = prompt("Current negative thought:", "What's on your mind?");
+
+	//image("file:///C:/Users/Revvy/Desktop/brokenRecord/public/Capture.png");
+	image("/public/images/Capture.png");
+
+	function image(src){
+	var img = document.createElement("img");
+	img.src = src;
+	document.body.appendChild(img);
+}
+
+</script>
+I got past the script call.
+</body>

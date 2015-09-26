@@ -1,1 +1,34 @@
-hello from the cloud code application - please read the following pages for more information: <a href="https://www.ng.bluemix.net/docs/#starters/mobile/mobilecloud/nodejsmobile.html#nodejsmobile">Extending Node.js to use Mobile Cloud applications</a>
+<!--hello from the cloud code application - please read the following pages for more information: <a href="https://www.ng.bluemix.net/docs/#starters/mobile/mobilecloud/nodejsmobile.html#nodejsmobile">Extending Node.js to use Mobile Cloud applications</a> -->
+
+<!--<script language="javascript" type="text/javascript"></script> -->
+<body>
+<script type="text/javascript">
+	var  i = 0;
+	var neg;
+	var images = null;
+
+	neg = prompt("Current negative thought:", "What's on your mind?");
+
+	image("http://blogs.longwood.edu/missfortune/files/2015/09/1-150x150.png");
+
+	document.write('<form onsumbit="crack()">Positive Thoughts:<br><input type="text" placeholder="I went outside today"><input type="reset" value="Go!"></form>');
+
+	function image(src){
+		var tmp = document.getElementById("records");
+		if(tmp != null){
+			document.body.removeChild(tmp);
+		}
+		var img = document.createElement("img");
+		img.setAttribute("id", "records");
+		img.src = src;
+		document.body.appendChild(img);
+    }
+
+    function crack(){
+    	++i;
+
+    	image("http://blogs.longwood.edu/missfortune/files/2015/09/1-150x150.png");
+    }
+
+</script>
+</body>

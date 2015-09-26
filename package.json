@@ -6,7 +6,7 @@
    "dependencies": {
       "express": "4.*",
       "body-parser": "*",
-      "ibmsecurity": "*",
+      "ibmsecurity": "1.0.0-20150720-1718",
       "twilio": "*",
       "ibmbluemix":"*",
       "ibmdata":"*"
