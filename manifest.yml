@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: Broken Record
+  host: broken-record
+  disk_quota: 1024M
+  services:
+  - Broken Record-MAS
+  - Broken Record-Push
+  - Broken Record-MobileData
+  - Broken Record-Mobile Quality Assurance
+  command: node app.js
