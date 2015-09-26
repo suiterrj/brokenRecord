@@ -3,13 +3,27 @@
 <!--<script language="javascript" type="text/javascript"></script> -->
 <body>
 <script type="text/javascript">
-	var  i = 0;
+	var  i = Object(0);
 	var neg;
 	var images = null;
+	var imgArray = [];
+
+	imgArray[0] = "http://blogs.longwood.edu/missfortune/files/2015/09/1.png";
+	imgArray[1] = "http://blogs.longwood.edu/missfortune/files/2015/09/2.png";
+	imgArray[2] = "http://blogs.longwood.edu/missfortune/files/2015/09/3.png";
+	imgArray[3] = "http://blogs.longwood.edu/missfortune/files/2015/09/4.png";
+	imgArray[4] = "http://blogs.longwood.edu/missfortune/files/2015/09/5.png";
+	imgArray[5] = "http://blogs.longwood.edu/missfortune/files/2015/09/6.png";
+	imgArray[6] = "http://blogs.longwood.edu/missfortune/files/2015/09/7.png";
+	imgArray[7] = "http://blogs.longwood.edu/missfortune/files/2015/09/8.png";
+	imgArray[8] = "http://blogs.longwood.edu/missfortune/files/2015/09/9.png";
+	imgArray[9] = "http://blogs.longwood.edu/missfortune/files/2015/09/10.png";
+	imgArray[10] = "http://blogs.longwood.edu/missfortune/files/2015/09/11.png";
 
 	neg = prompt("Current negative thought:", "What's on your mind?");
 
-	image("http://blogs.longwood.edu/missfortune/files/2015/09/1-150x150.png");
+	//image("http://blogs.longwood.edu/missfortune/files/2015/09/1-150x150.png");
+	image(imgArray[0]);
 
 	document.write('<form onsumbit="crack()">Positive Thoughts:<br><input type="text" placeholder="I went outside today"><input type="reset" value="Go!"></form>');
 
@@ -24,10 +38,12 @@
 		document.body.appendChild(img);
     }
 
-    function crack(){
-    	++i;
-
-    	image("http://blogs.longwood.edu/missfortune/files/2015/09/1-150x150.png");
+    function crack(i){
+    	if(i <= 10) {
+    		image(imgArray[i]);
+    		++i;
+    		return i;
+    	}
     }
 
 </script>
